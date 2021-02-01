@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Harbour1®</title>
+      <link rel="icon" href="http://103.210.73.84/Harbour1-homepage/images/H1 logo 1000x1000.png">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- jquery cdn-->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+      <!-- -->
+      <!-- font awesome cdn-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!--  -->
+      <!-- slider cdn-->
+      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+      <!-- -->
+      <!-- animation cdn cdn-->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+      <script src="https://wowjs.uk/dist/wow.min.js"></script>
+      <link rel="stylesheet" href="https://wowjs.uk/css/libs/animate.css">
+      <!-- -->
+      <script src="https://www.jqueryscript.net/demo/Counting-Up-To-Numerical-Values-On-Scroll-jQuery-Countup-js/jquery.countup.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+      <script>
+         new WOW().init();
+                
+                function myFunction(x) {
+                x.classList.toggle("change");
+                }
+                
+                $(document).ready(function(){
+         
+         $('#categories').hide();
+         $('#categories_1').hide();
+          $("#moretab").mouseenter(function(){
+
+         $("#categories").show(); 
+         });
+         
+         $("#categoriess").mouseleave(function(){
+         $("#categories").hide(); 
+
+         }); 
+
+			 
+
+			
+		
+         
+          $("#moretab_1").mouseenter(function(){
+			//alert("come");
+         $("#categories_1").show(); 
+         });
+         
+         $("#categories_1, #moretab_1").mouseleave(function(){
+         $("#categories_1").hide(); 
+
+         }); 
+
+
+         $('.counter').countUp({
+         'time': 2000,
+         'delay': 10
+         });
+         
+         
+         
+          
+          			window.onscroll = function() {myFunctions()};
+         
+         var header = document.getElementById("myHeader");
+         var sticky = header.offsetTop;
+         
+         function myFunctions() {
+         if (window.pageYOffset > sticky) {
+           header.classList.add("sticky");
+         } else {
+           header.classList.remove("sticky");
+         }
+         }
+                
+                $('.items').slick({
+                dots: true,
+                infinite: true,
+                speed: 800,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                responsive: [
+                {
+                breakpoint: 1024,
+                settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+                }
+                },
+                {
+                breakpoint: 600,
+                settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+                }
+                },
+                {
+                breakpoint: 480,
+                settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+                }
+                }
+                
+                ]
+                });
+                });
+         
+         
+         
+         
+             
+      </script>
+      <style>
+         body {
+         margin: 0;
+         font-family: 'Roboto', sans-serif;
+         font-size: 1rem;
+         font-weight: 400;
+         line-height: 1.5;
+         color:#535353;
+         text-align: left;
+         background-color: #fff;
+         }
+         .nav-link {
+         display: block;
+         padding: 1.5rem 1rem;
+         color: #6734FF;
+         }
+         .card-body {
+         flex: 1 1 auto;
+         min-height:220px;
+         display: flex;
+         justify-content: flex-end;
+         flex-direction: column;
+         padding: 1.25rem;
+         }
+         .card {
+         border: none;
+         }
+         .card_top {
+         position: relative;
+         top:33px;
+         color: white;
+         border: none;
+         } 
+         .fnt_size {
+         font-size: 73px; 
+         font-weight: 700;
+         }
+         .sub_fnt {
+         font-size: 22px;
+         font-weight: 700;
+         }
+         .items {
+         width: 90%;
+         margin: 0px auto;
+         margin-top:50px
+         }
+         .slick-slide {
+         margin: 10px
+         }
+         .slick-slide img {
+         width: 100%;
+         border: 0px solid #fff
+         }
+         .slick-prev:before, .slick-next:before {
+         font-family: 'slick';
+         font-size: 20px;
+         line-height: 1;
+         opacity: .75;
+         color: #040404;
+         -webkit-font-smoothing: antialiased;
+         -moz-osx-font-smoothing: grayscale;
+         }	
+         .footer_clss{
+         background: #4B24C3;
+         position: relative;
+         top: 16px;
+         height: 75px;
+         display: flex;
+         align-items: center;
+         flex-direction: column;
+         justify-content: center;
+         }
+         .p_fnt {
+         color: white;
+         font-weight:500;
+         }
+         .cc_bar{
+         color: #6735ff;
+         }
+         .cc-color-1{
+         color: #0B5A84;
+         }
+         .cc-color-2{
+         color: #108174;
+         }
+         .cc-color-3{
+         color:#43721A;
+         }
+         .cc-color-4{
+         color: #2F1DAC;
+         }
+
+
+         p {
+         margin-top: 0;
+         margin-bottom: 6px;
+         font-size: 18px;  
+         }
+         .cc_fntt {
+         color: #2b1485;
+         background: #fbfbff;
+         padding: 12px 14px;
+         cursor: pointer;
+         border-radius: 50%;
+         font-size: 15px;
+         }
+         .top-container {
+         background-color: #f1f1f1;
+         padding: 30px;
+         text-align: center;
+         }
+         .header {
+         padding: 10px 16px;
+         background: #555;
+         color: #f1f1f1;
+         }
+         .content {
+         padding: 16px;
+         }
+         .sticky {
+         position: fixed;
+         top: 0;
+         width: 100%;
+         }
+         .sticky + .content {
+         padding-top: 102px;
+         }
+         .navbar-light{
+         z-index: 999;
+         background: white;
+         }  
+         #categories{
+        top: 73px;	
+         background: gray;
+        
+         height: 90%;
+         	
+         z-index: 999;
+         width: 96%;
+         position: absolute;
+         }
+         .stats_cont{
+             color: #000!important;
+         }
+      </style>
+   </head>
+   <body>
+      <nav class="navbar navbar-light justify-content-between" id="myHeader">
+         <div class="container">
+            <a class="navbar-brand"><img  src="../images/harbour_logo.png" style="max-width: 100%;height:9vh;"></a>
+            <a class="nav-link span3 wow pulse" data-wow-iteration="5" data-wow-duration="0.25s" href="#"><strong>Products</strong></a>
+            <a class="nav-link span3 wow pulse" data-wow-iteration="5" data-wow-duration="0.25s" href="#"><strong>Industry Solutions</strong></a>
+            <a class="nav-link span3 wow pulse" data-wow-iteration="5" data-wow-duration="0.25s" href="#"><strong>Cloud Enablement </strong></a>
+            <a class="nav-link span3 wow pulse" data-wow-iteration="5" data-wow-duration="0.25s" href="#"><strong>Pricing </strong></a>
+            <a class="nav-link span3 wow pulse" data-wow-iteration="5" data-wow-duration="0.25s" href="#"><strong>Partners </strong></a>
+            <a class="nav-link span3 wow pulse" data-wow-iteration="5" data-wow-duration="0.25s" href="#"><strong>Self Service </strong></a>
+            <i class="fa fa-bars cc_bar"></i>
+         </div>
+      </nav>
+      <div id="categories">
+         <div class="row">
+            <div class="col-lg-2">
+               <ul>
+                  <li><a id="moretab_1">cats</a></li>
+                  <li>dogs</li>
+                  <li>cats</li>
+                  <li>dogs</li>
+                  <li>cats</li>
+                  <li>cats</li>
+                  <li>dogs</li>
+                  <li>cats</li>
+                  <li>dogs</li>
+               </ul>
+            </div>
+            <div class="col-lg-6">
+			<div id="categories_1">
+               <div class="mt-3">
+                  <h3>lorem  ipsum</h3>
+                  <p>lorem  ipsumlorem  ipsumlorem  ipsumlorem  ipsumlorem  ipsumlorem  ipsumlorem  ipsumlorem  ipsumlorem  ipsumlorem  ipsum</p>
+               </div>
+               <div class="mt-3">
+                  <h3>lorem  ipsum</h3>
+                  <p>lorem  ipsumlorem  ipsumlorem  ipsumlorem  ipsumlorem  ipsumlorem  ipsumlorem  ipsumlorem  ipsumlorem  ipsumlorem  ipsum</p>
+               </div>
+               <div class="mt-3">
+                  <h3>lorem  ipsum</h3>
+                  <p>lorem  ipsumlorem  ipsumlorem  ipsumlorem  ipsumlorem  ipsumlorem  ipsumlorem  ipsumlorem  ipsumlorem  ipsumlorem  ipsum</p>
+               </div>
+               <div class="mt-3">
+                  <h3>lorem  ipsum</h3>
+                  <p>lorem  ipsumlorem  ipsumlorem  ipsumlorem  ipsumlorem  ipsumlorem  ipsumlorem  ipsumlorem  ipsumlorem  ipsumlorem  ipsum</p>
+               </div>
+               <div class="mt-3">
+                  <h3>lorem  ipsum</h3>
+                  <p>lorem  ipsumlorem  ipsumlorem  ipsumlorem  ipsumlorem  ipsumlorem  ipsumlorem  ipsumlorem  ipsumlorem  ipsumlorem  ipsum</p>
+               </div>
+            </div>
+		</div>
+            <div class="col-lg-2">
+               <div class="card">
+                  <div class="card-header"></div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <picture>
+         <source media="(max-width: 728px)" srcset="/imges/Harbour1_Banner_2020_2b_780x840.png?v10">
+         <img class="mb-5" src="http://harbour1.in/images/HomePage.png" alt="Harbour1 Cloud Backup as a Service Banner" style="width:100%" data-pagespeed-url-hash="642989984" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+      </picture>
+      <div class="container content site-wrap">
+         <div class="text-center">
+            <h3><strong>Harbour1<sup>®</sup> - The Enterprise Cloud Platform</strong></h3>
+            <p>In today’s digital-driven economy, cloud services have assumed significance for right reasons. With enterprises focusing on to their core and emphasizing on quicker time to market, the need for flexibility in access, scalability in capacity, agility in performance, business continuity and cost efficiency, are rightly addressed by adoption of cloud-native strategies. </p>
+            <p class="mt-3">As, India’s first enterprise cloud, Harbour1<sup>®</sup> mirrors, innovation, and thought re-engineering, backed by relentless industry research and technology assimilations. Being platform-agnostic, Harbour1<sup>®</sup> incubates  scalability, high redundancy without compromising on unique security, regulatory, and compliance into all the products and services under one umbrella</p>
+         </div>
+         <div class="row mt-5">
+            <div class="col-lg-6">
+               <div class="card span3 wow pulse" data-wow-duration="7s" data-wow-delay="0.5s"  style="background-image: url(../images/A2_Thumbnail_1.png);">
+                  <div class="card-header card_top">
+                     <h4>Data Localisation</h4>
+                  </div>
+                  <div class="card-body">
+                     <div class="row">
+                        <div class="col-lg-10">
+                           <p class="m-0 p_fnt">Absolute compliance to the digital data protection laws of land, of India!!</p>
+                        </div>
+                        <div class="col-lg-2 d-flex justify-content-center align-items-center">
+                           <i class="fa fa-chevron-right cc_fntt"></i>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-6">
+               <div class="card span3 wow pulse" data-wow-duration="7s" data-wow-delay="0.5s" style="background-image: url(../images/A2_Thumbnail_2.png);">
+                  <div class="card-header card_top">
+                     <h4>99.995% uptime availability</h4>
+                  </div>
+                  <div class="card-body">
+                     <div class="row">
+                        <div class="col-lg-10">
+                           <p class="m-0 p_fnt">Delivered out of self-owned, multi locale Uptime Institute TIER  IV data centers </p>
+                        </div>
+                        <div class="col-lg-2 d-flex justify-content-center align-items-center">
+                           <i class="fa fa-chevron-right cc_fntt"></i>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="row mt-5">
+            <div class="col-lg-6">
+               <div class="card span3 wow pulse" data-wow-duration="7s" data-wow-delay="0.5s" style="background-image: url(../images/A2_Thumbnail_3.png);">
+                  <div class="card-header card_top">
+                     <h4>Scale @ will</h4>
+                  </div>
+                  <div class="card-body">
+                     <div class="row">
+                        <div class="col-lg-10">
+                           <p class="m-0 p_fnt">Multi-dimensional and real-time scaling of resources aligned to your business needs</p>
+                        </div>
+                        <div class="col-lg-2 d-flex justify-content-center align-items-center">
+                           <i class="fa fa-chevron-right cc_fntt"></i>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-6">
+               <div class="card span3 wow pulse" data-wow-duration="7s" data-wow-delay="0.5s" style="background-image: url(../images/A2_Thumbnail_4.png);">
+                  <div class="card-header card_top">
+                     <h4>Multi-tiered security</h4>
+                  </div>
+                  <div class="card-body">
+                     <div class="row">
+                        <div class="col-lg-10">
+                           <p class="m-0 p_fnt">Zoned security layers protecting data from vulnerabilities and threats </p>
+                        </div>
+                        <div class="col-lg-2 d-flex justify-content-center align-items-center">
+                           <i class="fa fa-chevron-right cc_fntt"></i>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="row mt-5">
+            <div class="col-lg-4 cc-color-1 text-center">
+               <div class="d-flex justify-content-center">
+                  <h3 class="fnt_size counter">14800</h3>
+                  <h3 class="fnt_size">+</h3>
+               </div>
+               <p class="sub_fnt">Mission Critical Workloads <sup>®</sup></p>
+              <p class="stats_cont">on Harbour1<sup>®</sup>, across 3 Availability Zones in India</p>
+            </div>
+            <div class="col-lg-4 cc-color-2 text-center">
+               <div class="d-flex justify-content-center">
+                  <h3 class="fnt_size counter">20</h3>
+                  <h3 class="fnt_size">+</h3>
+               </div>
+               <p class="sub_fnt">Banks & NBFCs </p>
+               <p class="stats_cont">develop, deploy workloads on Harbour1<sup>®</sup> in a complaint environment</p>
+
+            </div>
+            <div class="col-lg-4 cc-color-3 text-center">
+               <h3 class="fnt_size counter">4</h3>
+               <p class="sub_fnt">Payment Gateways </p>
+               <p class="stats_cont">are processing thousands of transactions every second on Harbour1<sup>®</sup></sup></p>
+
+            </div>
+         </div>
+         <div class="row mt-4">
+            <div class="col-lg-4 cc-color-4 text-center">
+               <h3 class="fnt_size counter">4</h3>
+               <p class="sub_fnt">Smart Cities </p>
+               <p class="stats_cont">with integrated IT, IoT and data on Harbour1<sup>®</sup>, delivering operational and service efficiency to citizens</p>
+
+            </div>
+            <div class="col-lg-4 cc-color-1 text-center">
+               <h3 class="fnt_size counter">5</h3>
+               <p class="sub_fnt">A-listed Indian Universities</p>
+               <p class="stats_cont">leveraging Harbour1<sup>®</sup> to deliver enhanced digital learning experience </p>
+
+            </div>
+            <div class="col-lg-4 cc-color-2 text-center">
+               <div class="d-flex justify-content-center">
+                  <h3 class="fnt_size counter">30</h3>
+                  <h3 class="fnt_size">%</h3>
+               </div>
+               <p class="sub_fnt">TCO Optimal</p>
+               <p class="stats_cont">compared to any major global cloud service provider</p>
+
+            </div>
+         </div>
+         <h3 class="mt-5 text-center"><strong>Journey with Harbour1<sup>®</sup></strong></h3>
+         <div class="row mt-4">
+            <div class="col-lg-6">
+               <div class="row">
+                  <div class="col-lg-3">
+                     <img class="w-100" src="../images/one_size.png">
+                  </div>
+                  <div class="col-lg-9">
+                     <h5>One size doesn't fit all</h5>
+                     <p>Start your custom  journey with a unique cloud adoption framework </p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-6">
+               <div class="row">
+                  <div class="col-lg-3">
+                     <img class="w-100" src="../images/any_migration.png">
+                  </div>
+                  <div class="col-lg-9">
+                     <h5>Any to any migration</h5>
+                     <p>Migration of servers, apps, databases & other workloads with diverse tools, techniques & technologies</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="row mt-5">
+            <div class="col-lg-6">
+               <div class="row">
+                  <div class="col-lg-3">
+                     <img class="w-100" src="../images/self_service.png">
+                  </div>
+                  <div class="col-lg-9">
+                     <h5>Self Service</h5>
+                     <p>Provision, scale and manage your workloads through a self service  </p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-6">
+               <div class="row">
+                  <div class="col-lg-3">
+                     <img class="w-100" src="../images/future.png">
+                  </div>
+                  <div class="col-lg-9">
+                     <h5>Future ready</h5>
+                     <p>Take advantage of emerging technologies like AI & ML, Cloud computing, IoT and Data Analytics </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="items">
+            <div><img src="../images/partner-1.png"></div>
+            <div><img src="../images/partner-2.png"></div>
+            <div><img src="../images/partner-3.png"></div>
+            <div><img src="../images/partner-4.png"></div>
+            <div><img src="../images/partner-5.png"></div>
+            <div><img src="../images/partner-6.png"></div>
+            <div><img src="../images/partner-7.png"></div>
+            <div><img src="../images/partner-8.png"></div>
+            <div><img src="../images/partner-9.png"></div>
+         </div>
+      </div>
+   </body>
+   <footer class="footer_clss">
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4">
+               <p class="text-center m-0 p_fnt">All  Rights Reserved @2021</p>
+            </div>
+            <div class="col-lg-4 d-flex">
+               <p class="m-0 p_fnt">Powered <br> By</p>
+               <img src="../images/Pi logo 180x-07.png" style="max-width: 100%;height:6vh;">
+            </div>
+         </div>
+      </div>
+   </footer>
+</html>
